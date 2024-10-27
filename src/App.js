@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import NavBar from './componenst/NavBar';
+import {ItenListContainer} from './ItenListContainer/ItenListContainer';
+
 
 function App() {
+
+  console.log ("rederizar App")
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+    <NavBar/>
+
+    <ItenListContainer greeting="Bienvenidos a Amelia tejidos"/>
+
+    </>
   );
 }
 
